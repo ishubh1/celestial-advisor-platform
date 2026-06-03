@@ -1,4 +1,5 @@
 import type { ReactNode } from "react";
+import { Toaster } from "sonner";
 import { Header } from "./Header";
 import { Footer } from "./Footer";
 import { FloatingCTA } from "./FloatingCTA";
@@ -10,6 +11,7 @@ export function Layout({ children }: { children: ReactNode }) {
       <main className="flex-1 pt-20">{children}</main>
       <Footer />
       <FloatingCTA />
+      <Toaster theme="dark" position="top-center" richColors />
     </div>
   );
 }
