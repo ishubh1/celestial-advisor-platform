@@ -1,5 +1,5 @@
 import { Phone, MessageCircle, Sparkles, ShieldCheck, Users, Lock } from "lucide-react";
-import { StarField } from "./StarField";
+import { StarField } from "@/components/StarField";
 import astrologer from "@/assets/astrologer.jpg";
 import heroBg from "@/assets/hero-bg.jpg";
 import { SITE } from "@/lib/site";

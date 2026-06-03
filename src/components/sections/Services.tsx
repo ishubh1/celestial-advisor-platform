@@ -1,9 +1,9 @@
-import { Heart, Rings, Briefcase, TrendingUp, ScrollText, Users2, Home, Gem, ArrowRight } from "lucide-react";
+import { Heart, HeartHandshake, Briefcase, TrendingUp, ScrollText, Users2, Home, Gem, ArrowRight } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 
 const services: { icon: LucideIcon; title: string; desc: string }[] = [
   { icon: Heart, title: "Love & Relationship", desc: "Clarity on compatibility, conflicts, reunion, and the path to lasting harmony." },
-  { icon: Rings, title: "Marriage Consultation", desc: "Right timing, partner match, family harmony and remedies for marital bliss." },
+  { icon: HeartHandshake, title: "Marriage Consultation", desc: "Right timing, partner match, family harmony and remedies for marital bliss." },
   { icon: Briefcase, title: "Career Astrology", desc: "Identify your strongest career path, growth windows, and decisive moves." },
   { icon: TrendingUp, title: "Business Astrology", desc: "Auspicious timings, partnerships, expansion strategy and wealth alignment." },
   { icon: ScrollText, title: "Kundli Analysis", desc: "Deep birth-chart reading covering every house, dasha and planetary placement." },
@@ -11,8 +11,6 @@ const services: { icon: LucideIcon; title: string; desc: string }[] = [
   { icon: Home, title: "Vastu Consultation", desc: "Energize home and workplace through scientific Vastu correction." },
   { icon: Gem, title: "Gemstone Guidance", desc: "Personally calibrated gemstones to amplify favourable planetary energy." },
 ];
-
-// Rings icon fallback (lucide doesn't ship Rings) — use a substitute via aliasing below if needed.
 export function Services() {
   return (
     <section id="services" className="relative py-24 lg:py-32">
