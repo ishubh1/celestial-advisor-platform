@@ -1,11 +1,14 @@
 import { Award } from "lucide-react";
+import cert1 from "@/assets/cert-1.jpg.asset.json";
+import cert2 from "@/assets/cert-2.jpg.asset.json";
+import cert3 from "@/assets/cert-3.jpg.asset.json";
+import cert4 from "@/assets/cert-4.jpg.asset.json";
 
-// Replace the src values with your uploaded certificate image paths in src/assets/
 const certs = [
-  { title: "Jyotish Acharya", issuer: "Bharatiya Vidya Bhavan", src: "" },
-  { title: "Vastu Shastra Expert", issuer: "All India Federation of Astrologers", src: "" },
-  { title: "Vedic Numerology", issuer: "Indian Council of Astrological Sciences", src: "" },
-  { title: "Lal Kitab Specialist", issuer: "Akhil Bharatiya Jyotish Sansthan", src: "" },
+  { title: "Jyotish Bhushan", issuer: "All India Federation of Astrologers' Societies (AIFAS)", src: cert1.url },
+  { title: "Honorary Doctorate", issuer: "Asia Vedic Culture Research University", src: cert2.url },
+  { title: "Jyotish Bhushan", issuer: "Future Point · AIFAS", src: cert3.url },
+  { title: "International Certified Consultant", issuer: "International Astrology Federation (IAF)", src: cert4.url },
 ];
 
 export function Certificates() {
@@ -18,26 +21,26 @@ export function Certificates() {
             Certified &amp; <span className="text-gold-gradient">Recognized Expertise</span>
           </h2>
           <p className="mt-4 text-muted-foreground">
-            Formal accreditations across Vedic astrology, Vastu and allied sciences — proof of a
+            Formal accreditations from leading Vedic and international astrology bodies — proof of a
             disciplined, lifelong study of the shastras.
           </p>
         </div>
 
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {certs.map((c) => (
-            <div key={c.title} className="glass-card rounded-2xl p-5 group hover:border-gold/60 transition-all">
+            <div key={c.title + c.issuer} className="glass-card rounded-2xl p-5 group hover:border-gold/60 transition-all">
               <div className="aspect-[3/4] rounded-xl overflow-hidden gold-border bg-gradient-to-br from-[oklch(0.18_0.08_285)] to-[oklch(0.12_0.05_280)] grid place-items-center mb-4">
                 {c.src ? (
-                  <img src={c.src} alt={`${c.title} certificate`} className="h-full w-full object-cover" loading="lazy" />
+                  <img src={c.src} alt={`${c.title} certificate issued by ${c.issuer}`} className="h-full w-full object-cover" loading="lazy" />
                 ) : (
                   <div className="text-center p-4">
                     <Award className="h-12 w-12 text-gold mx-auto mb-2" />
-                    <div className="text-[10px] uppercase tracking-wider text-muted-foreground">Upload certificate image</div>
+                    <div className="text-[10px] uppercase tracking-wider text-muted-foreground">Certificate</div>
                   </div>
                 )}
               </div>
-              <div className="font-display text-lg font-semibold">{c.title}</div>
-              <div className="text-xs text-muted-foreground mt-1">{c.issuer}</div>
+              <div className="font-display text-lg font-semibold leading-tight">{c.title}</div>
+              <div className="text-xs text-muted-foreground mt-1 leading-snug">{c.issuer}</div>
             </div>
           ))}
         </div>
