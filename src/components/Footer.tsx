@@ -34,7 +34,7 @@ export function Footer() {
           <ul className="space-y-3 text-sm text-foreground/80">
             <li>
               <a href={SITE.whatsappHref} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-gold">
-                <MessageCircle className="h-4 w-4 text-gold" /> Chat instantly · {SITE.whatsappNumber}
+                <MessageCircle className="h-4 w-4 text-gold" /> Chat instantly
               </a>
             </li>
             <li>

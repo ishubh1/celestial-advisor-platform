@@ -53,7 +53,7 @@ export function LeadForm() {
             </p>
           </div>
           <ul className="space-y-4">
-            <li className="flex items-start gap-3"><MessageCircle className="h-5 w-5 text-gold mt-0.5" /><div><div className="text-xs uppercase tracking-wider text-muted-foreground">WhatsApp</div><a href={SITE.whatsappHref} target="_blank" rel="noopener noreferrer" className="text-foreground hover:text-gold">Chat instantly · {SITE.whatsappNumber}</a></div></li>
+            <li className="flex items-start gap-3"><MessageCircle className="h-5 w-5 text-gold mt-0.5" /><div><div className="text-xs uppercase tracking-wider text-muted-foreground">WhatsApp</div><a href={SITE.whatsappHref} target="_blank" rel="noopener noreferrer" className="text-foreground hover:text-gold">Chat instantly</a></div></li>
             <li className="flex items-start gap-3"><Mail className="h-5 w-5 text-gold mt-0.5" /><div><div className="text-xs uppercase tracking-wider text-muted-foreground">Email</div><a href={`mailto:${SITE.email}`} className="text-foreground hover:text-gold">{SITE.email}</a></div></li>
             <li className="flex items-start gap-3"><Instagram className="h-5 w-5 text-gold mt-0.5" /><div><div className="text-xs uppercase tracking-wider text-muted-foreground">Instagram</div><a href={SITE.instagramHref} target="_blank" rel="noopener noreferrer" className="text-foreground hover:text-gold">@{SITE.instagram}</a></div></li>
           </ul>

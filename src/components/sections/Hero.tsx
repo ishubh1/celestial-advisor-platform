@@ -38,7 +38,6 @@ export function Hero() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
             <a href={SITE.whatsappHref} target="_blank" rel="noopener noreferrer" className="group inline-flex items-center justify-center gap-3 h-14 px-8 rounded-full bg-[oklch(0.65_0.18_150)] text-white font-semibold shadow-gold hover:scale-[1.03] transition-transform">
               <MessageCircle className="h-5 w-5" /> WhatsApp Now
-              <span className="opacity-80 text-sm font-normal">{SITE.whatsappNumber}</span>
             </a>
             <a href="/book" className="inline-flex items-center justify-center gap-2 h-14 px-8 rounded-full glass-card gold-border text-gold hover:bg-gold/10 transition-colors font-semibold">
               Book Consultation

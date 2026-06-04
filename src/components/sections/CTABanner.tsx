@@ -19,7 +19,7 @@ export function CTABanner() {
             </p>
             <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
               <a href={SITE.whatsappHref} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-3 h-14 px-8 rounded-full bg-[oklch(0.65_0.18_150)] text-white font-semibold hover:scale-[1.03] transition-transform shadow-gold">
-                <MessageCircle className="h-5 w-5" /> WhatsApp {SITE.whatsappNumber}
+                <MessageCircle className="h-5 w-5" /> WhatsApp
               </a>
               <a href={SITE.instagramHref} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-3 h-14 px-8 rounded-full bg-gradient-to-tr from-[oklch(0.6_0.22_25)] via-[oklch(0.55_0.25_330)] to-[oklch(0.6_0.2_280)] text-white font-semibold hover:scale-[1.03] transition-transform">
                 <Instagram className="h-5 w-5" /> Follow on Instagram

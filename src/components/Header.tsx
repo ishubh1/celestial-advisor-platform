@@ -95,7 +95,7 @@ export function Header() {
               </Link>
             ))}
             <a href={SITE.whatsappHref} target="_blank" rel="noopener noreferrer" className="mt-4 inline-flex items-center justify-center gap-2 h-12 rounded-full bg-[oklch(0.65_0.18_150)] text-white font-semibold">
-              <MessageCircle className="h-4 w-4" /> WhatsApp {SITE.whatsappNumber}
+              <MessageCircle className="h-4 w-4" /> WhatsApp
             </a>
           </nav>
         </div>
