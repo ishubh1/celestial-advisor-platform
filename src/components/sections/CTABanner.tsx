@@ -1,4 +1,4 @@
-import { Phone, MessageCircle, Sparkles } from "lucide-react";
+import { MessageCircle, Instagram, Sparkles } from "lucide-react";
 import { StarField } from "@/components/StarField";
 import { SITE } from "@/lib/site";
 
@@ -15,14 +15,14 @@ export function CTABanner() {
               Need Guidance for <span className="text-gold-gradient">Important Life Decisions?</span>
             </h2>
             <p className="mt-4 text-muted-foreground max-w-xl mx-auto">
-              Speak directly with Vikram ji today. Confidential, personalized, and rooted in classical Vedic wisdom.
+              Message Vikram ji today on WhatsApp. Confidential, personalized, and rooted in classical Vedic wisdom.
             </p>
             <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
-              <a href={SITE.phoneHref} className="inline-flex items-center justify-center gap-3 h-14 px-8 rounded-full bg-gold-gradient text-primary-foreground font-semibold shadow-gold hover:scale-[1.03] transition-transform">
-                <Phone className="h-5 w-5" /> Call Now
+              <a href={SITE.whatsappHref} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-3 h-14 px-8 rounded-full bg-[oklch(0.65_0.18_150)] text-white font-semibold hover:scale-[1.03] transition-transform shadow-gold">
+                <MessageCircle className="h-5 w-5" /> WhatsApp {SITE.whatsappNumber}
               </a>
-              <a href={SITE.whatsappHref} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-3 h-14 px-8 rounded-full bg-[oklch(0.65_0.18_150)] text-white font-semibold hover:scale-[1.03] transition-transform">
-                <MessageCircle className="h-5 w-5" /> WhatsApp Now
+              <a href={SITE.instagramHref} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-3 h-14 px-8 rounded-full bg-gradient-to-tr from-[oklch(0.6_0.22_25)] via-[oklch(0.55_0.25_330)] to-[oklch(0.6_0.2_280)] text-white font-semibold hover:scale-[1.03] transition-transform">
+                <Instagram className="h-5 w-5" /> Follow on Instagram
               </a>
             </div>
           </div>

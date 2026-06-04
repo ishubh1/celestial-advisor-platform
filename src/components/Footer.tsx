@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { Phone, MessageCircle, Mail, Clock } from "lucide-react";
+import { MessageCircle, Mail, Instagram } from "lucide-react";
 import logo from "@/assets/logo.png";
 import { SITE } from "@/lib/site";
 
@@ -32,10 +32,21 @@ export function Footer() {
         <div>
           <h4 className="text-gold font-semibold mb-4 uppercase tracking-wider text-xs">Reach Us</h4>
           <ul className="space-y-3 text-sm text-foreground/80">
-            <li><a href={SITE.phoneHref} className="flex items-center gap-2 hover:text-gold"><Phone className="h-4 w-4 text-gold" /> {SITE.phone}</a></li>
-            <li><a href={SITE.whatsappHref} className="flex items-center gap-2 hover:text-gold"><MessageCircle className="h-4 w-4 text-gold" /> WhatsApp</a></li>
-            <li><a href={`mailto:${SITE.email}`} className="flex items-center gap-2 hover:text-gold"><Mail className="h-4 w-4 text-gold" /> {SITE.email}</a></li>
-            <li className="flex items-center gap-2"><Clock className="h-4 w-4 text-gold" /> {SITE.hours}</li>
+            <li>
+              <a href={SITE.whatsappHref} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-gold">
+                <MessageCircle className="h-4 w-4 text-gold" /> Chat instantly · {SITE.whatsappNumber}
+              </a>
+            </li>
+            <li>
+              <a href={`mailto:${SITE.email}`} className="flex items-center gap-2 hover:text-gold">
+                <Mail className="h-4 w-4 text-gold" /> {SITE.email}
+              </a>
+            </li>
+            <li>
+              <a href={SITE.instagramHref} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-gold">
+                <Instagram className="h-4 w-4 text-gold" /> @{SITE.instagram}
+              </a>
+            </li>
           </ul>
         </div>
       </div>

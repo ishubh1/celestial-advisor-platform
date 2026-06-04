@@ -3,6 +3,7 @@ import { Layout } from "@/components/Layout";
 import { Hero } from "@/components/sections/Hero";
 import { Services } from "@/components/sections/Services";
 import { WhyChoose, HowItWorks } from "@/components/sections/WhyHow";
+import { Certificates } from "@/components/sections/Certificates";
 import { Testimonials } from "@/components/sections/Testimonials";
 import { CTABanner } from "@/components/sections/CTABanner";
 import { FAQ } from "@/components/sections/FAQ";
@@ -23,7 +24,7 @@ export const Route = createFileRoute("/")({
         "@type": "ProfessionalService",
         name: "Astro Vikram Ghosi",
         description: "Trusted Vedic astrology consultations for love, marriage, career and business.",
-        telephone: "+91 98765 43210",
+        telephone: "+91 81190 85965",
         priceRange: "₹₹",
         aggregateRating: { "@type": "AggregateRating", ratingValue: "4.9", reviewCount: "5000" },
       }),
@@ -38,6 +39,7 @@ function Index() {
       <Hero />
       <Services />
       <WhyChoose />
+      <Certificates />
       <HowItWorks />
       <Testimonials />
       <CTABanner />
