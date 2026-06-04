@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Send, Loader2, Phone, MessageCircle, Mail, Clock } from "lucide-react";
+import { Send, Loader2, MessageCircle, Mail, Instagram } from "lucide-react";
 import { SITE } from "@/lib/site";
 import { toast } from "sonner";
 
@@ -49,14 +49,13 @@ export function LeadForm() {
             <div className="text-xs uppercase tracking-[0.3em] text-gold mb-3">Book a Consultation</div>
             <h2 className="font-display text-4xl lg:text-5xl font-medium">Begin Your <span className="text-gold-gradient">Journey to Clarity</span></h2>
             <p className="mt-4 text-muted-foreground">
-              Share a few details and Vikram ji's team will reach out personally within hours. For urgent queries, call directly.
+              Share a few details and Vikram ji's team will reach out personally within hours. For urgent queries, message on WhatsApp.
             </p>
           </div>
           <ul className="space-y-4">
-            <li className="flex items-start gap-3"><Phone className="h-5 w-5 text-gold mt-0.5" /><div><div className="text-xs uppercase tracking-wider text-muted-foreground">Phone</div><a href={SITE.phoneHref} className="text-foreground hover:text-gold">{SITE.phone}</a></div></li>
-            <li className="flex items-start gap-3"><MessageCircle className="h-5 w-5 text-gold mt-0.5" /><div><div className="text-xs uppercase tracking-wider text-muted-foreground">WhatsApp</div><a href={SITE.whatsappHref} className="text-foreground hover:text-gold">Chat instantly</a></div></li>
+            <li className="flex items-start gap-3"><MessageCircle className="h-5 w-5 text-gold mt-0.5" /><div><div className="text-xs uppercase tracking-wider text-muted-foreground">WhatsApp</div><a href={SITE.whatsappHref} target="_blank" rel="noopener noreferrer" className="text-foreground hover:text-gold">Chat instantly · {SITE.whatsappNumber}</a></div></li>
             <li className="flex items-start gap-3"><Mail className="h-5 w-5 text-gold mt-0.5" /><div><div className="text-xs uppercase tracking-wider text-muted-foreground">Email</div><a href={`mailto:${SITE.email}`} className="text-foreground hover:text-gold">{SITE.email}</a></div></li>
-            <li className="flex items-start gap-3"><Clock className="h-5 w-5 text-gold mt-0.5" /><div><div className="text-xs uppercase tracking-wider text-muted-foreground">Hours</div><div className="text-foreground">{SITE.hours}</div></div></li>
+            <li className="flex items-start gap-3"><Instagram className="h-5 w-5 text-gold mt-0.5" /><div><div className="text-xs uppercase tracking-wider text-muted-foreground">Instagram</div><a href={SITE.instagramHref} target="_blank" rel="noopener noreferrer" className="text-foreground hover:text-gold">@{SITE.instagram}</a></div></li>
           </ul>
         </div>
 
