@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Layout } from "@/components/Layout";
-import { Services } from "@/components/sections/Services";
+import { Services, ServicesDetailed } from "@/components/sections/Services";
 import { CTABanner } from "@/components/sections/CTABanner";
 
 export const Route = createFileRoute("/services")({
@@ -17,6 +17,7 @@ export const Route = createFileRoute("/services")({
     <Layout>
       <div className="pt-10">
         <Services />
+        <ServicesDetailed />
         <CTABanner />
       </div>
     </Layout>
