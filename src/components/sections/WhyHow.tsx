@@ -1,4 +1,4 @@
-import { UserCheck, Award, Lock, CheckCircle2, Phone, MessageCircle, FileText, Sparkles } from "lucide-react";
+import { UserCheck, Award, Lock, CheckCircle2, MessageCircle, FileText, Sparkles } from "lucide-react";
 import { SITE } from "@/lib/site";
 
 const reasons = [
@@ -9,7 +9,7 @@ const reasons = [
 ];
 
 const steps = [
-  { icon: Phone, title: "Call or WhatsApp", desc: "Reach out via call or WhatsApp to schedule your consultation." },
+  { icon: MessageCircle, title: "Message on WhatsApp", desc: "Reach out via WhatsApp to schedule your consultation in minutes." },
   { icon: FileText, title: "Share Your Details", desc: "Provide your birth date, time, place and the concern you'd like guidance on." },
   { icon: Sparkles, title: "Receive Guidance", desc: "Get a personalized reading with clear remedies and next-step recommendations." },
 ];
