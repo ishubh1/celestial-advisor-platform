@@ -66,12 +66,9 @@ export function HowItWorks() {
             </div>
           ))}
         </div>
-        <div className="mt-12 flex flex-col sm:flex-row gap-4 justify-center">
-          <a href={SITE.phoneHref} className="inline-flex items-center justify-center gap-2 h-12 px-7 rounded-full bg-gold-gradient text-primary-foreground font-semibold shadow-gold">
-            <Phone className="h-4 w-4" /> Call Now
-          </a>
-          <a href={SITE.whatsappHref} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 h-12 px-7 rounded-full bg-[oklch(0.65_0.18_150)] text-white font-semibold">
-            <MessageCircle className="h-4 w-4" /> WhatsApp
+        <div className="mt-12 flex justify-center">
+          <a href={SITE.whatsappHref} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 h-12 px-7 rounded-full bg-[oklch(0.65_0.18_150)] text-white font-semibold shadow-gold">
+            <MessageCircle className="h-4 w-4" /> WhatsApp {SITE.whatsappNumber}
           </a>
         </div>
       </div>
