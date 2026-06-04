@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { Phone, MessageCircle, Menu, X } from "lucide-react";
+import { MessageCircle, Instagram, Menu, X } from "lucide-react";
 import { useState, useEffect } from "react";
 import logo from "@/assets/logo.png";
 import { SITE } from "@/lib/site";
@@ -55,19 +55,21 @@ export function Header() {
 
         <div className="flex items-center gap-2">
           <a
+            href={SITE.instagramHref}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hidden sm:inline-flex items-center justify-center h-11 w-11 rounded-full bg-gradient-to-tr from-[oklch(0.6_0.22_25)] via-[oklch(0.55_0.25_330)] to-[oklch(0.6_0.2_280)] text-white shadow-gold hover:scale-105 transition-transform"
+            aria-label="Instagram"
+          >
+            <Instagram className="h-5 w-5" />
+          </a>
+          <a
             href={SITE.whatsappHref}
             target="_blank"
             rel="noopener noreferrer"
-            className="hidden sm:inline-flex items-center justify-center h-11 w-11 rounded-full bg-[oklch(0.7_0.18_150)] text-white shadow-gold hover:scale-105 transition-transform"
-            aria-label="WhatsApp"
+            className="hidden sm:inline-flex items-center gap-2 h-11 px-5 rounded-full bg-[oklch(0.65_0.18_150)] text-white font-semibold text-sm shadow-gold hover:scale-105 transition-transform"
           >
-            <MessageCircle className="h-5 w-5" />
-          </a>
-          <a
-            href={SITE.phoneHref}
-            className="hidden sm:inline-flex items-center gap-2 h-11 px-5 rounded-full bg-gold-gradient text-primary-foreground font-semibold text-sm shadow-gold hover:scale-105 transition-transform"
-          >
-            <Phone className="h-4 w-4" /> Call Now
+            <MessageCircle className="h-4 w-4" /> WhatsApp
           </a>
           <button
             onClick={() => setOpen(!open)}
@@ -92,8 +94,8 @@ export function Header() {
                 {n.label}
               </Link>
             ))}
-            <a href={SITE.phoneHref} className="mt-4 inline-flex items-center justify-center gap-2 h-12 rounded-full bg-gold-gradient text-primary-foreground font-semibold">
-              <Phone className="h-4 w-4" /> Call {SITE.phone}
+            <a href={SITE.whatsappHref} target="_blank" rel="noopener noreferrer" className="mt-4 inline-flex items-center justify-center gap-2 h-12 rounded-full bg-[oklch(0.65_0.18_150)] text-white font-semibold">
+              <MessageCircle className="h-4 w-4" /> WhatsApp {SITE.whatsappNumber}
             </a>
           </nav>
         </div>
